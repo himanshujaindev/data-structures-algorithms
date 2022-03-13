@@ -1,2 +1,4 @@
+Run File: Fn + F5
+
 javac <filename>.java
 java <classname>
