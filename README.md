@@ -2,15 +2,13 @@
 Repository for tested codes of DSA and CP problems
 
 
----------------------------------------------------------
-
-Coding Profile:
+### Coding Profile:
 - Leetcode: https://leetcode.com/nhimanshujain/ 
 
 
----------------------------------------------------------
 
-Folder Structure:
+
+### Folder Structure:
 
 > Command: tree
 ```
@@ -30,4 +28,4 @@ Folder Structure:
 +
 ```
 
----------------------------------------------------------
+
