@@ -1,4 +1,4 @@
-package Algorithms;
+package Common;
 
 import java.util.Arrays;
 import java.util.Scanner;

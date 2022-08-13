@@ -11,7 +11,7 @@ boolean = stack.empty()
 pos_from_top = stack.search(element); else -1
 */
 
-public class basics {
+public class stacks {
     public static void main(String[] args) {
         Stack stack1 = new Stack();
 

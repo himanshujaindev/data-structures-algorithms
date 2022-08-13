@@ -1,5 +1,5 @@
 package Algorithms.Sorting;
-import Algorithms.io;
+import Common.io;
 
 class selection_sort {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package ProblemStatement;
+
 import java.util.Scanner;
 
 class recursion_factorial {

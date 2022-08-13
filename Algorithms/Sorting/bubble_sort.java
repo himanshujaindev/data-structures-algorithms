@@ -1,5 +1,5 @@
 package Algorithms.Sorting;
-import Algorithms.io;
+import Common.io;
 
 public class bubble_sort {
     public static void main(String[] args) {
