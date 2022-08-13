@@ -1,9 +1,8 @@
-package ProblemStatement;
+package Algorithms.Recursion;
 
 import java.util.Scanner;
 
-class recursion_factorial {
-
+public class factorial {
     public int factorial(int n) {
 
         // base condition
@@ -20,11 +19,10 @@ class recursion_factorial {
         System.out.print("Enter num = ");
         int n = sc.nextInt();
 
-        recursion_factorial f = new recursion_factorial();
+        factorial f = new factorial();
         int res = f.factorial(n);
 
         // int res = factorial(n);  // if use static method
         System.out.println("Factorial = " + res);
     }
-    
 }

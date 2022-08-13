@@ -1,9 +1,8 @@
-package ProblemStatement;
+package Algorithms.Recursion;
 
 import java.util.Scanner;
 
-public class recursion_fibonacci {
-
+public class fibonacci {
     public int fibonacci(int n) {
         if (n == 0 || n == 1) {
             return n;
@@ -19,7 +18,7 @@ public class recursion_fibonacci {
         int n = sc.nextInt();
 
         // 0 1 1 2 3 5
-        recursion_fibonacci f = new recursion_fibonacci();
+        fibonacci f = new fibonacci();
         int sum = 0;
 
         for (int i = 0; i < n; i++) {
@@ -31,5 +30,4 @@ public class recursion_fibonacci {
         System.out.println("Sum = " + sum);
 
     }
-
 }

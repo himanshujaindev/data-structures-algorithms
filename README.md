@@ -14,18 +14,32 @@ Repository for tested codes of DSA and CP problems
 ```
 +
 ├───Algorithms
+│   ├───Arrays
+│   ├───Recursion
 │   ├───Searching
 │   └───Sorting
 ├───Basics
+├───Common
 ├───DataStructures
+│   ├───Arrays
 │   ├───DP
 │   ├───Graphs
 │   ├───Heap
 │   ├───LinkedList
 │   ├───Stack
+│   ├───Stacks
+│   ├───Strings
 │   └───Trees
-└───ProblemStatement
+├───QuickCode
 +
 ```
 
+### Commands
+
+```
+javac Rootpath/<filename>.java
+java Rootpath/<classname>
+
+Run File: Fn + F5
+```
 

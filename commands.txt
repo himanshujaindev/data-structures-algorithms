@@ -1,4 +1,0 @@
-javac Rootpath/<filename>.java
-java Rootpath/<classname>
-
-Run File: Fn + F5
