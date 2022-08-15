@@ -10,7 +10,6 @@ Repository for tested codes of DSA and CP problems
 
 ### Folder Structure:
 
-> Command: tree
 ```
 +
 ├───Algorithms
@@ -32,6 +31,8 @@ Repository for tested codes of DSA and CP problems
 │   └───Trees
 ├───QuickCode
 +
+
+Use Command: tree
 ```
 
 ### Commands
