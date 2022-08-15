@@ -1,4 +1,4 @@
-package DataStructures.Stacks;
+package DataStructures.Stack;
 
 import java.util.Stack;
 
@@ -11,7 +11,7 @@ boolean = stack.empty()
 pos_from_top = stack.search(element); else -1
 */
 
-public class stacks {
+public class stack {
     public static void main(String[] args) {
         Stack stack1 = new Stack();
 
