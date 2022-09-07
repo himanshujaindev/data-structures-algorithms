@@ -9,7 +9,7 @@ public class io {
     public static int readInt() {
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("Enter num of elements = ");
+        System.out.print("Enter num = ");
         int num = sc.nextInt();
 
         return num;

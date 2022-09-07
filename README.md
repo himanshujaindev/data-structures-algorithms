@@ -15,28 +15,26 @@ Repository for tested codes of DSA and CP problems
 ### Folder Structure:
 
 ```
-+
-├───Algorithms
-│   ├───Arrays
-│   ├───Recursion
-│   ├───Searching
-│   └───Sorting
-├───Basics
-├───Common
-├───DataStructures
-│   ├───Arrays
-│   ├───DP
-│   ├───Graphs
-│   ├───Heap
-│   ├───LinkedList
-│   ├───Stack
-│   ├───Stacks
-│   ├───Strings
-│   └───Trees
-├───QuickCode
-+
+.
+├── Algorithms
+│   ├── Arrays
+│   ├── Recursion
+│   └── Sorting
+├── Basics
+├── Common
+├── DataStructures
+│   ├── Arrays
+│   ├── Heap
+│   ├── LinkedList
+│   ├── Maps
+│   ├── Queue
+│   ├── Stack
+│   ├── Stacks
+│   ├── Strings
+│   └── Tree
+└── QuickCode
 
-Use Command: tree
+Use Command: tree -I '*.class' OR tree -d
 ```
 
 ### Commands
