@@ -3,9 +3,9 @@ import Common.io;
 
 class selection_sort {
     public static void main(String[] args) {
-        int[] arr = io.read();
+        int[] arr = io.readArr();
         System.out.print("Before Sort = ");
-        io.display(arr);
+        io.displayArr(arr);
 
 
         // Algo
@@ -22,6 +22,6 @@ class selection_sort {
         }
 
         System.out.print("After Sort = ");
-        io.display(arr);
+        io.displayArr(arr);
     }
 }

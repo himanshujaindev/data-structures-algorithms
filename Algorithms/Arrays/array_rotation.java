@@ -14,7 +14,7 @@ Juggling ALgo
 public class array_rotation {
 
     public static void main(String[] args) {
-        int[] arr = io.read();
+        int[] arr = io.readArr();
         int n = arr.length;
 
         System.out.print("Enter num of pos to rotate = ");
@@ -26,7 +26,7 @@ public class array_rotation {
         }
 
         System.out.print("Before Rotation = ");
-        io.display(arr);
+        io.displayArr(arr);
         
         // Rotation - Rotate by one
         for(int p=0; p<pos; p++){
@@ -38,7 +38,7 @@ public class array_rotation {
         }
 
         System.out.print("After Rotation = ");
-        io.display(arr);
+        io.displayArr(arr);
     }
     
 

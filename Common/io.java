@@ -4,7 +4,23 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class io {
-    public static int[] read() {
+
+    // Int
+    public static int readInt() {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter num of elements = ");
+        int num = sc.nextInt();
+
+        return num;
+    }
+
+    public static void displayInt(int num) {
+        System.out.println(num);
+    }
+
+    // Array
+    public static int[] readArr() {
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Enter num of elements = ");
@@ -19,7 +35,7 @@ public class io {
         return arr;
     }
 
-    public static void display(int[] arr){
+    public static void displayArr(int[] arr){
         System.out.println(Arrays.toString(arr));
     }
 }

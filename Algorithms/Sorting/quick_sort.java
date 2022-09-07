@@ -3,14 +3,14 @@ import Common.io;
 
 public class quick_sort {
     public static void main(String[] args) {
-        int[] arr = io.read();
+        int[] arr = io.readArr();
         System.out.print("Before Sort = ");
-        io.display(arr);
+        io.displayArr(arr);
 
 
         // Algo
 
         System.out.print("After Sort = ");
-        io.display(arr);
+        io.displayArr(arr);
     }
 }

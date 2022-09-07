@@ -6,7 +6,7 @@ import Common.io;
 
 public class hashmap {
     public static void main(String[] args) {
-        int[] arr = io.read();
+        int[] arr = io.readArr();
 
         // Freq of array elements
         HashMap<Integer, Integer> hm = new HashMap<>();
@@ -21,7 +21,7 @@ public class hashmap {
         }
 
         System.out.print("Array = ");
-        io.display(arr);
+        io.displayArr(arr);
         System.out.println("Hashmap = " + hm.toString());
     }
 }
