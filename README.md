@@ -19,6 +19,8 @@ Repository for tested codes of DSA and CP problems
 ├── Algorithms
 │   ├── Arrays
 │   ├── BinarySearch
+│   ├── Miscellaneous
+│   ├── Patterns
 │   ├── Recursion
 │   └── Sorting
 ├── Basics
