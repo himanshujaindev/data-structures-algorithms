@@ -3,19 +3,18 @@ Repository for tested codes of DSA and CP problems
 
 
 ### Coding Profile:
-- Leetcode: https://leetcode.com/nhimanshujain/ 
+- **Leetcode**: https://leetcode.com/nhimanshujain/ 
 
 
 ### Naming Convention
-- Folder Name = Upper Camel Case -> DataStructures
-- File Name | Class Name = Small Underscore Case -> min_heap.java
-- Method Name | Variable Name = Small Camel Case -> printHeap()
+- **Folder Name** = Upper Camel Case -> DataStructures
+- **File Name | Class Name** = Small Underscore Case -> min_heap.java
+- **Method Name | Variable Name** = Small Camel Case -> printHeap()
 
 
 ### Folder Structure:
 
 ```
-.
 .
 ├── Algorithms
 │   ├── Arrays
@@ -50,7 +49,7 @@ java Rootpath/<classname>
 ```
 
 
-### Keyboard Shortcuts
+### Keyboard Shortcuts (VSCODE)
 
 ```
 1. Format Document
