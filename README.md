@@ -16,6 +16,7 @@ Repository for tested codes of DSA and CP problems
 
 ```
 .
+.
 ├── Algorithms
 │   ├── Arrays
 │   ├── BinarySearch
@@ -32,12 +33,13 @@ Repository for tested codes of DSA and CP problems
 │   ├── Maps
 │   ├── Queue
 │   ├── Stack
-│   ├── Stacks
 │   ├── Strings
 │   └── Tree
 └── QuickCode
 
-Use Command: tree -I '*.class' OR tree -d
+19 directories
+
+Use Command: tree -d OR tree -I '*.class'
 ```
 
 ### Commands
