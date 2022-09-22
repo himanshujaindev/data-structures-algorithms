@@ -11,11 +11,10 @@ public class hashmap {
         // Freq of array elements
         HashMap<Integer, Integer> hm = new HashMap<>();
 
-        for(int elem: arr) {
-            if(hm.containsKey(elem)) {
+        for (int elem : arr) {
+            if (hm.containsKey(elem)) {
                 hm.put(elem, hm.get(elem) + 1);
-            }
-            else {
+            } else {
                 hm.put(elem, 1);
             }
         }

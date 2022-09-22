@@ -6,11 +6,10 @@ public class factorial {
     public int factorial(int n) {
 
         // base condition
-        if(n == 1) {
+        if (n == 1) {
             return 1;
-        }
-        else {
-            return n * factorial(n-1); // subproblem // stack memory
+        } else {
+            return n * factorial(n - 1); // subproblem // stack memory
         }
     }
 
@@ -22,7 +21,7 @@ public class factorial {
         factorial f = new factorial();
         int res = f.factorial(n);
 
-        // int res = factorial(n);  // if use static method
+        // int res = factorial(n); // if use static method
         System.out.println("Factorial = " + res);
     }
 }

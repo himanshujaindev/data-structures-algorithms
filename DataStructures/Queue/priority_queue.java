@@ -21,11 +21,11 @@ public class priority_queue {
         // Printing the top element of
         // the PriorityQueue
         System.out.println(pq.peek());
-  
+
         // Printing the top element and removing it
         // from the PriorityQueue container
         System.out.println(pq.poll());
-  
+
         // Printing the top element again
         System.out.println(pq.peek());
 

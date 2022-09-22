@@ -20,7 +20,6 @@ public class heap_pq {
         pq.poll();
         System.out.println(pq);
 
-
         // MAX HEAP
         PriorityQueue<Integer> pq2 = new PriorityQueue<>(Collections.reverseOrder());
 

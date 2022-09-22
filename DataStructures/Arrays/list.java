@@ -9,20 +9,18 @@ import java.util.List;
 public class list {
 
     public static void main(String[] args) {
-        
+
         List<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
 
-        int[] arr = {10,20,30};
-
+        int[] arr = { 10, 20, 30 };
 
         // Array to list - Traverse the arr and add elements to the list
         List<Integer> newList = new ArrayList<>();
-        for(int elem: arr) {
+        for (int elem : arr) {
             newList.add(elem);
         }
-        
 
         // list to array
         Integer[] newArr = list.toArray(new Integer[list.size()]);
@@ -30,10 +28,9 @@ public class list {
         // int[]
 
         int[] arrInt = new int[5];
-        for(int i=0; i<5; i++) {
+        for (int i = 0; i < 5; i++) {
             arrInt[i] = i;
         }
-
 
         // Sort a list
 

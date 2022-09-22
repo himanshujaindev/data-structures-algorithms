@@ -14,16 +14,16 @@ public class circular_linked_list {
             next = null;
         }
     }
-    
+
     public static circular_linked_list insert(circular_linked_list list, int data) {
         Node node = new Node(data);
 
-        if(list.head == null) {
+        if (list.head == null) {
             list.head = node;
             list.tail = node;
         } else {
             Node cur = list.head;
-            while(cur != list.tail) {
+            while (cur != list.tail) {
                 cur = cur.next;
             }
 
@@ -34,13 +34,12 @@ public class circular_linked_list {
         }
 
         return list;
-        
-    }
 
+    }
 
     public static void display(circular_linked_list list) {
         Node cur = list.head;
-        while(cur != list.tail) {
+        while (cur != list.tail) {
             System.out.print(cur.data + "->");
             cur = cur.next;
         }

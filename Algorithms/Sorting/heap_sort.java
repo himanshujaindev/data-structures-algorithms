@@ -1,4 +1,5 @@
 package Algorithms.Sorting;
+
 import Common.io;
 
 public class heap_sort {
@@ -7,9 +8,7 @@ public class heap_sort {
         System.out.print("Before Sort = ");
         io.displayArr(arr);
 
-
         // Algo
-
 
         System.out.print("After Sort = ");
         io.displayArr(arr);

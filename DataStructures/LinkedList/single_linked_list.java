@@ -1,8 +1,8 @@
 package DataStructures.LinkedList;
 
 public class single_linked_list {
-    Node head;  // initially pointing to nothing
-    
+    Node head; // initially pointing to nothing
+
     public static class Node {
         int data;
         Node next;
@@ -18,26 +18,26 @@ public class single_linked_list {
 
         Node node = new Node(data);
 
-        if(list.head == null) {
+        if (list.head == null) {
             list.head = node;
         }
 
         else {
             Node temp = list.head;
-            while(temp.next != null) {
+            while (temp.next != null) {
                 temp = temp.next;
             }
 
             temp.next = node;
         }
-        
+
         return list;
     }
 
     // print list
     public static void print(Node head) {
         Node temp = head;
-        while(temp.next != null) {
+        while (temp.next != null) {
             System.out.print(temp.data + "->");
             temp = temp.next;
         }
@@ -50,7 +50,7 @@ public class single_linked_list {
 
         Node cur = list.head;
         Node prev = null;
-        while(cur != null) {
+        while (cur != null) {
             Node temp = cur.next;
             cur.next = prev;
             prev = cur;

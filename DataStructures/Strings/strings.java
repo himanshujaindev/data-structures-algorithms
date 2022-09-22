@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-
 /*
 
 Ref = https://www.javatpoint.com/java-string 
@@ -30,17 +29,14 @@ public class strings {
         System.out.println(str1.equalsIgnoreCase(str2));
         System.out.println(str1.compareTo(str2));
 
-        
         // Concatenation
         System.out.println(str1 + " " + str2 + 30);
         System.out.println(str1.concat(str2));
         System.out.println(String.join("-", str1, str2));
 
         List<String> liststr = Arrays.asList("abc", "def", "ijk");
-        String concat_str = liststr.stream().collect(Collectors.joining(", ")); //performs joining operation 
+        String concat_str = liststr.stream().collect(Collectors.joining(", ")); // performs joining operation
         System.out.println(concat_str);
 
-
-        
     }
 }

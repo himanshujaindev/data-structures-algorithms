@@ -1,7 +1,7 @@
 package DataStructures.LinkedList;
 
 public class double_linked_list {
-   
+
     public static class Node {
         int data;
         Node next;
@@ -15,6 +15,6 @@ public class double_linked_list {
     }
 
     public static void main(String[] args) {
-        
+
     }
 }

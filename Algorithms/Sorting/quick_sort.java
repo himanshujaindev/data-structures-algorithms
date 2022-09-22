@@ -1,4 +1,5 @@
 package Algorithms.Sorting;
+
 import Common.io;
 
 public class quick_sort {
@@ -6,7 +7,6 @@ public class quick_sort {
         int[] arr = io.readArr();
         System.out.print("Before Sort = ");
         io.displayArr(arr);
-
 
         // Algo
 

@@ -45,7 +45,30 @@ Use Command: tree -I '*.class' OR tree -d
 ```
 javac Rootpath/<filename>.java
 java Rootpath/<classname>
-
-Run File: Fn + F5
 ```
 
+
+### Keyboard Shortcuts
+
+```
+1. Format Document
+Mac: Command + Control + F
+Windows:
+
+2. Debug
+Mac: Command + D
+Windows: 
+
+2. Run
+Mac: Command + R
+Windows: Fn + F5
+```
+
+
+### ToDo Before Commit
+
+```
+1. Format the document
+2. Update the directory tree
+3. Follow the naming convention
+```

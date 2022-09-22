@@ -37,9 +37,9 @@ public class basic_syntax {
 
     public static void main(String[] args) {
         int data = 10; // Instance variable
-        
+
         float f = 10.5f;
-        int d = (int)f; // Typecasting - Narrowing
+        int d = (int) f; // Typecasting - Narrowing
 
         boolean b = true;
         char letter = 'A';
@@ -57,75 +57,75 @@ public class basic_syntax {
         }
 
         // switch
-        switch(d){
+        switch (d) {
             case 1:
                 System.out.println("Case 1");
-            case 2: 
+            case 2:
                 System.out.println("Case 2");
                 break;
             default:
                 System.out.println("Default");
         }
 
-        // Loop 
+        // Loop
 
         // For loop
-        for(int i=0; i<5; i++){
+        for (int i = 0; i < 5; i++) {
             System.out.println("For Loop = " + i);
         }
 
         // For each loop
-        char[] arr = {'a','b','c'};
-        for(char c: arr){
+        char[] arr = { 'a', 'b', 'c' };
+        for (char c : arr) {
             System.out.println("For each loop = " + c);
         }
 
         // while loop
         int j = 0;
-        while(j < 5){
+        while (j < 5) {
             System.out.println("While loop = " + j++);
         }
 
         // do - while loop
         /*
+         * 
+         * do {
+         * // task
+         * } while (condition)
+         * 
+         */
 
-        do {
-            // task
-        } while (condition)
-        
-        */
+        // Break and Continue
 
-        // Break and Continue 
-
-        // Array 
+        // Array
 
         // Declaration and Instantiation
         int[] a = new int[5];
-        int[] num_arr = {1,2,3,4,5};
+        int[] num_arr = { 1, 2, 3, 4, 5 };
 
         System.out.println("Arr = " + Arrays.toString(num_arr));
         int min_val = min(num_arr);
 
         // 2-D array
-        int[][] matrix = {{1,2,3}, {4,5,6}}; // 2*3 matrix
+        int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 } }; // 2*3 matrix
         System.out.println("Matrix");
-        for(int[] oned_arr: matrix){
+        for (int[] oned_arr : matrix) {
             System.out.println(Arrays.toString(oned_arr));
         }
 
         // Copy an array
         // System.arraycopy(src, srcPos, dest, destPos, length);
-        int[] arr1 = {1,2,3};
+        int[] arr1 = { 1, 2, 3 };
         int[] arr2 = new int[3];
         System.arraycopy(arr1, 0, arr2, 0, arr1.length);
         System.out.println("Copy array = " + Arrays.toString(arr2));
 
     }
 
-    static int min(int[] arr){
+    static int min(int[] arr) {
         int min = arr[0];
-        for(int i=1; i < arr.length; i ++) {
-            if(arr[i] < min) {
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
                 min = arr[i];
             }
         }
