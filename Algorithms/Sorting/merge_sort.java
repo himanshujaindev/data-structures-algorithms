@@ -2,6 +2,8 @@ package Algorithms.Sorting;
 
 import Common.io;
 
+// Divide and Conquer algorithm
+
 public class merge_sort {
 
     public static void merge(int[] arr, int low, int mid, int high) {
