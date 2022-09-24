@@ -38,7 +38,9 @@ Repository for tested codes of DSA and CP problems
 
 19 directories
 
-Use Command: tree -d OR tree -I '*.class'
+Use Command: 
+MAC: tree -d OR tree -I '*.class'
+Windows: tree
 ```
 
 ### Commands
@@ -54,15 +56,15 @@ java Rootpath/<classname>
 ```
 1. Format Document
 Mac: Command + Control + F
-Windows:
+Windows: Ctrl + Alt + F
 
 2. Debug
 Mac: Command + D
-Windows: 
+Windows: Ctrl + D
 
 2. Run
 Mac: Command + R
-Windows: Fn + F5
+Windows: Ctrl + R
 ```
 
 
