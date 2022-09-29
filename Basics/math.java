@@ -9,6 +9,6 @@ public class math {
         System.out.println("Power = " + Math.pow(a, b));
         System.out.println("Sqrt = " + Math.sqrt(a));
         System.out.println("Random = " + Math.random()); // Random double
-
+        System.out.println("Random = " + Math.abs(b-a));
     }
 }

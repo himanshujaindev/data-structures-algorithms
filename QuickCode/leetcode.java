@@ -3,80 +3,29 @@ package QuickCode;
 import java.util.ArrayList;
 import java.util.List;
 
-class MyCircularQueue {
-    int[] queue;
-    int start = 0, end = -1, size = 0; // and points to last inserted element
-    int maxCapacity;
-
-    public MyCircularQueue(int k) {
-        queue = new int[k];
-        maxCapacity = k;
-        return;
-    }
-    
-    public boolean enQueue(int value) {
-        if(isFull()) {
-            return false;
-        }
-
-        size++;
-        end = (end + 1) % maxCapacity;
-        queue[end] = value;
-        
-        return true;
-    }
-    
-    public boolean deQueue() {
-        if(isEmpty()) {
-            return false;
-        }
-
-        size--;
-        start = (start + 1) % maxCapacity;
-        return true;
-    }
-    
-    public int Front() {
-        if(isEmpty()) {
-            return -1;
-        }
-
-        return queue[start];
-    }
-    
-    public int Rear() {
-        if(isEmpty()) {
-            return -1;
-        }
-
-        return queue[end];
-    }
-    
-    public boolean isEmpty() {
-        return size==0;
-    }
-    
-    public boolean isFull() {
-        return size==maxCapacity;
-    }
-}
-
 public class leetcode {
 
-    public static int concatenatedBinary(int n) {
-        long res = 0;
-        long MOD = (long) Math.pow(10, 9) + 7;
-        for (int i = 1; i <= n; i++) {
-            int no_digits = Integer.toBinaryString(i).length();
-            res = (long) (res * Math.pow(2, no_digits) + i) % MOD;
+    public static List<Integer> findClosestElements(int[] arr, int k, int x) {
+        int n = arr.length;
+        int low = 0, high = n - 1;
+        while ((high - low) >= k) {
+            if (Math.abs(x - arr[high]) < Math.abs(x - arr[low]))
+                low++;
+            else
+                high--;
         }
 
-        return (int) res;
+        List<Integer> result = new ArrayList<>();
+        for (int i = low; i <= high; i++) {
+            result.add(arr[i]);
+        }
+        return result;
     }
 
     public static void main(String[] args) {
 
-        int res = concatenatedBinary(12);
+        int[] arr = { 0, 0, 0, 1, 3, 5, 6, 7, 8, 8 };
+        List<Integer> res = findClosestElements(arr, 2, 2);
         System.out.println(res);
     }
 }
