@@ -1,4 +1,4 @@
-package DataStructures.LinkedList;
+package DataStructures.Implementation.LinkedList;
 
 public class circular_linked_list {
 

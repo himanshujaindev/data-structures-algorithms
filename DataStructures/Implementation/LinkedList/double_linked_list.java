@@ -1,4 +1,4 @@
-package DataStructures.LinkedList;
+package DataStructures.Implementation.LinkedList;
 
 public class double_linked_list {
 

@@ -1,4 +1,4 @@
-package DataStructures.Strings;
+package DataStructures.Implementation.Strings;
 
 import java.util.Arrays;
 import java.util.List;

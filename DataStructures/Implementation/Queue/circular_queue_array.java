@@ -1,4 +1,4 @@
-package DataStructures.Queue;
+package DataStructures.Implementation.Queue;
 
 class MyCircularQueue {
     int[] queue;

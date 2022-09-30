@@ -1,4 +1,4 @@
-package DataStructures.LinkedList;
+package DataStructures.Implementation.LinkedList;
 
 public class single_linked_list {
     Node head; // initially pointing to nothing

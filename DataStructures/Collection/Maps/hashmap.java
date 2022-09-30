@@ -1,4 +1,4 @@
-package DataStructures.Maps;
+package DataStructures.Collection.Maps;
 
 import java.util.HashMap;
 
