@@ -16,25 +16,31 @@ Repository for tested codes of DSA and CP problems
 
 ```
 .
-├── Algorithms
-│   ├── Arrays
-│   ├── BinarySearch
-│   ├── Miscellaneous
-│   ├── Patterns
-│   ├── Recursion
-│   └── Sorting
-├── Basics
-├── Common
-├── DataStructures
-│   ├── Arrays
-│   ├── Heap
-│   ├── LinkedList
-│   ├── Maps
-│   ├── Queue
-│   ├── Stack
-│   ├── Strings
-│   └── Tree
-└── QuickCode
+├───Algorithms
+│   ├───Arrays
+│   ├───BinarySearch
+│   ├───Miscellaneous
+│   ├───Patterns
+│   ├───Recursion
+│   └───Sorting
+├───Basics
+├───Common
+├───DataStructures
+│   ├───Collection
+│   │   ├───Heap
+│   │   ├───List
+│   │   ├───Maps
+│   │   ├───Queue
+│   │   ├───Sort
+│   │   └───Stack
+│   └───Implementation
+│       ├───Arrays
+│       ├───LinkedList
+│       ├───Queue
+│       ├───Strings
+│       └───Tree
+├───LeetCode
+└───Practice
 
 19 directories
 
