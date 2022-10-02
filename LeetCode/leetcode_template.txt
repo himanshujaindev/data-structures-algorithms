@@ -1,4 +1,4 @@
-package QuickCode;
+package LeetCode;
 
 import java.util.List;
 
