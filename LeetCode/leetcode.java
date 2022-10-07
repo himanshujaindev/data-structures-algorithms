@@ -1,18 +1,18 @@
 package LeetCode;
 
-import java.util.List;
+class SomeClass {
+    // public SomeClass() {
+    // }
+
+    public int method() {
+        return 0;
+    }
+}
 
 public class leetcode {
 
-    public List<Integer> fn(int a) {
-        return null;
-    }
-
     public static void main(String[] args) {
-        leetcode lt = new leetcode();
-
-        int a = 1;
-        List<Integer> res = lt.fn(a);
-        System.out.println(res);
+        SomeClass sc = new SomeClass();
+        System.out.println(sc.method());
     }
 }
