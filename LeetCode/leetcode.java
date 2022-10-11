@@ -1,18 +1,18 @@
 package LeetCode;
 
-class SomeClass {
-    // public SomeClass() {
+class Solution {
+    // public Solution() {
     // }
 
-    public int method() {
-        return 0;
+    public boolean increasingTriplet(int[] nums) {
+        return true;
     }
 }
 
 public class leetcode {
 
     public static void main(String[] args) {
-        SomeClass sc = new SomeClass();
-        System.out.println(sc.method());
+        Solution sc = new Solution();
+        System.out.println(sc.increasingTriplet(new int[] { 1, 1, -2, 6 }));
     }
 }
