@@ -1,6 +1,7 @@
 package DataStructures.Implementation.Arrays;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 /*
@@ -46,5 +47,8 @@ public class arrays {
         // Jagged array = 2-D array; Fixed number of rows and variable number of columns
 
         System.out.println(Arrays.toString(new int[] { 3, 4, 5 })); // Anonymous array
+
+
+        // Arrays.sort(arr1);
     }
 }
