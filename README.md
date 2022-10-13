@@ -4,6 +4,7 @@ Repository for tested codes of DSA and CP problems
 
 ### Coding Profile:
 - **Leetcode**: https://leetcode.com/nhimanshujain/ 
+- **Codechef**: https://www.codechef.com/users/himanshujain17 
 
 
 ### Naming Convention
@@ -16,33 +17,36 @@ Repository for tested codes of DSA and CP problems
 
 ```
 .
-├───Algorithms
-│   ├───Arrays
-│   ├───BinarySearch
-│   ├───Miscellaneous
-│   ├───Patterns
-│   ├───Recursion
-│   └───Sorting
-├───Basics
-├───Common
-├───DataStructures
-│   ├───Collection
-│   │   ├───Heap
-│   │   ├───List
-│   │   ├───Maps
-│   │   ├───Queue
-│   │   ├───Sort
-│   │   └───Stack
-│   └───Implementation
-│       ├───Arrays
-│       ├───LinkedList
-│       ├───Queue
-│       ├───Strings
-│       └───Tree
-├───LeetCode
-└───Practice
+├── Algorithms
+│   ├── Arrays
+│   ├── BinarySearch
+│   ├── Miscellaneous
+│   ├── Patterns
+│   ├── Recursion
+│   └── Sorting
+├── Basics
+├── Codechef
+├── Common
+├── DataStructures
+│   ├── Collection
+│   │   ├── Heap
+│   │   ├── List
+│   │   ├── Maps
+│   │   ├── Queue
+│   │   ├── Sort
+│   │   └── Stack
+│   └── Implementation
+│       ├── Arrays
+│       ├── Graphs
+│       ├── LinkedList
+│       ├── Queue
+│       ├── Strings
+│       └── Tree
+├── LeetCode
+├── Practice
+└── QuickCode
 
-19 directories
+28 directories
 
 Use Command: 
 MAC: tree -d OR tree -I '*.class'
