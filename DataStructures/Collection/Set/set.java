@@ -7,11 +7,12 @@ public class set {
     public static void main(String[] args) {
         String sentence = "thequickbrownfoxjumpsoverthelazydog";
         Set<Character> seen = new HashSet<>();
-        for(char ch: sentence.toCharArray()) {
+        for (char ch : sentence.toCharArray()) {
             seen.add(ch);
         }
 
         System.out.println(seen);
-        if(seen.size() == 26) System.out.println("true");
+        if (seen.size() == 26)
+            System.out.println("true");
     }
 }
