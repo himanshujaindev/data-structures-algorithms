@@ -14,5 +14,12 @@ public class set {
         System.out.println(seen);
         if (seen.size() == 26)
             System.out.println("true");
+
+        Set<Integer> s = new HashSet<>();
+        for (int i = 0; i < 10; i++) {
+            s.add(i);
+            s.remove(i - 1);
+        }
+        System.out.println(s.toString());
     }
 }
