@@ -1,6 +1,7 @@
 package DataStructures.Implementation.Strings;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -37,6 +38,13 @@ public class strings {
         List<String> liststr = Arrays.asList("abc", "def", "ijk");
         String concat_str = liststr.stream().collect(Collectors.joining(", ")); // performs joining operation
         System.out.println(concat_str);
+
+        // Sort
+        String test = "hello";
+        char[] charArray = test.toCharArray();
+        Arrays.sort(charArray);
+        System.out.println(String.valueOf(charArray));
+        System.out.println(new String(charArray));
 
     }
 }
