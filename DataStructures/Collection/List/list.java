@@ -1,44 +1,43 @@
 package DataStructures.Collection.List;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class list {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
+        // Initialize the list
 
-        int[] arr = { 10, 20, 30 };
-
-        // Array to list - Traverse the arr and add elements to the list
-        List<Integer> newList = new ArrayList<>();
-        for (int elem : arr) {
-            newList.add(elem);
-        }
-
-        // list to array
-        Integer[] newArr = list.toArray(new Integer[list.size()]);
-
-        // int[]
-
-        int[] arrInt = new int[5];
-        for (int i = 0; i < 5; i++) {
-            arrInt[i] = i;
-        }
-
-        // Sort a list
-
+        // Way 1:
         List<Integer> list1 = new ArrayList<>();
-        list1.add(3);
         list1.add(1);
         list1.add(2);
 
-        System.out.println(list1.toString());
-        list1.sort(null); // Ascending
-        // list1.sort(Comparator.reverseOrder()); // Descending
-        System.out.println(list1.toString());
+        // Way 2: Array to list
+        int[] arr1 = { 10, 20, 30 };
+
+        // Array to list - Traverse the arr and add elements to the list
+        List<Integer> list2 = new ArrayList<>();
+        for (int elem : arr1) {
+            list2.add(elem);
+        }
+
+        // Way 3:
+        List<Integer> list3 = new ArrayList<>(Arrays.asList(10, 30, 20));
+
+        // ------- //
+
+        // list to array
+        Integer[] list4 = list1.toArray(new Integer[list1.size()]);
+
+        // Sort a list
+
+        System.out.println(list3.toString());
+        list3.sort(null); // Ascending
+        // Collections.sort(list3); // Ascending
+        // list3.sort(Comparator.reverseOrder()); // Descending
+        System.out.println(list3.toString());
 
         System.out.println("Max = " + Collections.max(list1, null));
     }

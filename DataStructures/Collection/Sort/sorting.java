@@ -42,8 +42,10 @@ class Company implements Comparable<Company> {
 
     @Override
     public int compareTo(Company c) {
-        if(this.getSalary() > c.getSalary()) return 1;
-        else return -1;
+        if (this.getSalary() > c.getSalary())
+            return 1;
+        else
+            return -1;
     }
 }
 
@@ -114,7 +116,6 @@ public class sorting {
         Collections.sort(listStringList1, comparator2);
         System.out.println(listStringList1);
 
-        
         // Sort Type = List of object; Ascending -> Using Comparator-compare
         List<Company> companies = new ArrayList<>();
         companies.add(new Company("Google", 101));
@@ -122,6 +123,7 @@ public class sorting {
         companies.add(new Company("Amazon", 102));
 
         /*
+
         Comparator<Company> comparator3 = new Comparator<Company>() {
             @Override
             public int compare(Company o1, Company o2) {
@@ -137,12 +139,32 @@ public class sorting {
         System.out.println(companies.toString());
         
         */
-
-        // Sort Type = List of object; Ascending -> Using Comparable-compareTo
         
+        // Sort Type = List of object; Ascending -> Using Comparable-compareTo
+
         System.out.println(companies.toString());
         Collections.sort(companies);
         System.out.println(companies.toString());
+
+        // Sort Type = List of Integer; Based on Ascending order of another array ->
+        // Using Comparator-comparingInt
+
+        int[] sortOrder1 = { 2, 3, 1 };
+        List<Integer> array1 = new ArrayList<>(Arrays.asList(0, 1, 2));
+
+        System.out.println("Original array = " + array1.toString());
+        Collections.sort(array1, Comparator.comparingInt(i -> sortOrder1[i]));
+        System.out.println("Sorted array = " + array1.toString());
+
+        // Sort Type = List of Integer; Based on Descending order of another array ->
+        // Using Comparator-comparingInt
+
+        int[] sortOrder2 = { 2, 3, 1 };
+        List<Integer> array2 = new ArrayList<>(Arrays.asList(0, 1, 2));
+
+        System.out.println("Original array = " + array2.toString());
+        Collections.sort(array2, Comparator.comparingInt(i -> -sortOrder2[i]));
+        System.out.println("Sorted array = " + array2.toString());
 
     }
 
