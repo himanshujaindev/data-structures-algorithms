@@ -1,80 +1,66 @@
 package DataStructures.Implementation.Graphs;
 
-import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Queue;
+
+// Input = Maze / Array
+// BFS = Shortest Path
 
 public class bfs {
 
-    private int V;
-    private LinkedList<Integer> adj[]; // Linked List of Linked List
+    static class Pair {
+        int first, second;
 
-    // Create a graph
-    bfs(int v) {
-        V = v;
-        adj = new LinkedList[V];
-        for (int i = 0; i < V; ++i)
-            adj[i] = new LinkedList<>();
-    }
-
-    // Add edges to the graph
-    void addEdge(int v, int w) {
-        adj[v].add(w);
-    }
-
-    void displayGraph() {
-        for (int i = 0; i < adj.length; i++) {
-            System.out.print(i + " : ");
-
-            for (Integer l : adj[i]) {
-                System.out.print(l + " -> ");
-            }
-            System.out.print("END");
-            System.out.println();
+        Pair(int a, int b) {
+            this.first = a;
+            this.second = b;
         }
-    }
-
-    public void iterative_bfs(int start) {
-        LinkedList<Integer> queue = new LinkedList<>();
-        queue.add(start);
-
-        int[] visit = new int[V];
-
-        while (queue.size() != 0) {
-            int element = queue.poll();
-            visit[element] = 1;
-            System.out.print(element + " -> ");
-            Iterator<Integer> it = adj[element].iterator();
-
-            while (it.hasNext()) {
-                int next = it.next();
-                if (visit[next] == 0) {
-                    queue.add(next);
-                    visit[next] = 1;
-                }
-            }
-
-        }
-
-        System.out.println("END");
-
     }
 
     public static void main(String[] args) {
+        int[][] graph = new int[][] {
+                { 1, 0, 0, 0},
+                { 1, 1, 1, 1 },
+                { 0, 1, 0, 1},
+                { 0, 1, 1, 1}
+        };
 
-        int n = 4;
-        int start = 2;
-        bfs g = new bfs(n);
-        g.addEdge(0, 1);
-        g.addEdge(0, 2);
-        g.addEdge(1, 2);
-        g.addEdge(2, 0);
-        g.addEdge(2, 3);
-        g.addEdge(3, 3);
-        g.displayGraph();
+        int n = graph.length;
+        int[][] dir = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
+        Queue<Pair> queue = new LinkedList<>();
+        boolean[][] visit = new boolean[n][n];
+        int ones = 0;
 
-        // Recursive BFS
+        queue.offer(new Pair(0, 0));
+        visit[0][0] = true;
+        System.out.print("START -> (0,0) -> ");
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            while (size-- > 0) {
+                Pair cur = queue.poll();
+                // base case
+                if (cur.first == n - 1 && cur.second == n - 1) {
+                    System.out.println("END");
+                    System.out.println("Count = " + ones);
+                    return;
+                }
 
-        // Iterative BFS -> Queue
-        g.iterative_bfs(start);
+                for (int[] d : dir) {
+                    int row = cur.first + d[0];
+                    int col = cur.second + d[1];
+
+                    if (row < 0 || row >= n || col < 0 || col >= n) {
+                        continue;
+                    }
+
+                    if (!visit[row][col] && graph[row][col] == 1) {
+                        queue.add(new Pair(row, col));
+                        visit[row][col] = true;
+                    }
+                }
+            }
+            ones++;            
+            System.out.print("(" + queue.peek().first + "," + queue.peek().second + ") -> ");
+        }
     }
 }
