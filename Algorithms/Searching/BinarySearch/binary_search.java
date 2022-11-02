@@ -1,4 +1,4 @@
-package Algorithms.BinarySearch;
+package Algorithms.Searching.BinarySearch;
 
 import Algorithms.Sorting.merge_sort;
 import Common.io;

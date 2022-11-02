@@ -1,7 +1,6 @@
-package DataStructures.Implementation.Strings;
+package DataStructures.Implementation.String;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -15,7 +14,7 @@ Ref = https://www.javatpoint.com/java-string
 
  */
 
-public class strings {
+public class string {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

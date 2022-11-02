@@ -1,4 +1,4 @@
-package DataStructures.Implementation.Arrays;
+package DataStructures.Implementation.Array;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,7 +11,7 @@ https://www.geeksforgeeks.org/arrays-in-java/
 
 */
 
-public class arrays {
+public class array {
     public static void main(String[] args) {
         // int intArray[]; // declaring array (No array created)
         // intArray = new int[20]; // allocating memory to array (Array of 20 elements

@@ -1,4 +1,4 @@
-package DataStructures.Implementation.Graphs;
+package DataStructures.Implementation.Graph;
 
 import java.util.Iterator;
 import java.util.LinkedList;
