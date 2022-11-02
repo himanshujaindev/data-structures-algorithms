@@ -19,10 +19,10 @@ public class bfs {
 
     public static void main(String[] args) {
         int[][] graph = new int[][] {
-                { 1, 0, 0, 0},
+                { 1, 0, 0, 0 },
                 { 1, 1, 1, 1 },
-                { 0, 1, 0, 1},
-                { 0, 1, 1, 1}
+                { 0, 1, 0, 1 },
+                { 0, 1, 1, 1 }
         };
 
         int n = graph.length;
@@ -59,7 +59,7 @@ public class bfs {
                     }
                 }
             }
-            ones++;            
+            ones++;
             System.out.print("(" + queue.peek().first + "," + queue.peek().second + ") -> ");
         }
     }
