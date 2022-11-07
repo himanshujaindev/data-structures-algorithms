@@ -1,11 +1,12 @@
-package DataStructures.Implementation.Graph;
+package Algorithms.Graph;
 
 import java.util.Stack;
 
 // Input = Maze / Array
 // Count the no of Islands
+// Backtracking
 
-public class dfs {
+public class count_islands {
 
     static class Pair {
         int first, second;

@@ -1,49 +1,33 @@
 package DataStructures.Implementation.Graph;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Queue;
+
+import Common.graph_io;
+
+/*
+BFS = Queue
+BFS recursive not possible (only iterative)
+*/
 
 public class bfs_adjList {
 
-    private int V;
-    private LinkedList<Integer> adj[]; // Linked List of Linked List
+    private static void bfs(ArrayList<ArrayList<Integer>> adj, int start) {
+        Queue<Integer> queue = new LinkedList<>();
+        int V = adj.size();
 
-    // Create a graph
-    bfs_adjList(int v) {
-        V = v;
-        adj = new LinkedList[V];
-        for (int i = 0; i < V; ++i)
-            adj[i] = new LinkedList<>();
-    }
-
-    // Add edges to the graph
-    void addEdge(int v, int w) {
-        adj[v].add(w);
-    }
-
-    void displayGraph() {
-        for (int i = 0; i < adj.length; i++) {
-            System.out.print(i + " : ");
-
-            for (Integer l : adj[i]) {
-                System.out.print(l + " -> ");
-            }
-            System.out.print("END");
-            System.out.println();
-        }
-    }
-
-    public void iterative_bfs(int start) {
-        LinkedList<Integer> queue = new LinkedList<>();
         queue.add(start);
 
         int[] visit = new int[V];
 
+        System.out.print("START -> ");
         while (queue.size() != 0) {
             int element = queue.poll();
             visit[element] = 1;
             System.out.print(element + " -> ");
-            Iterator<Integer> it = adj[element].iterator();
+            Iterator<Integer> it = adj.get(element).iterator();
 
             while (it.hasNext()) {
                 int next = it.next();
@@ -52,29 +36,21 @@ public class bfs_adjList {
                     visit[next] = 1;
                 }
             }
-
         }
-
         System.out.println("END");
-
     }
 
     public static void main(String[] args) {
 
-        int n = 4;
-        int start = 2;
-        bfs_adjList g = new bfs_adjList(n);
-        g.addEdge(0, 1);
-        g.addEdge(0, 2);
-        g.addEdge(1, 2);
-        g.addEdge(2, 0);
-        g.addEdge(2, 3);
-        g.addEdge(3, 3);
-        g.displayGraph();
+        // Adj List
+        int n = 5;
+        int start = 0;
+        int[][] edges = { { 0, 1 }, { 0, 4 }, { 1, 4 }, { 1, 3 }, { 4, 3 }, { 1, 2 }, { 3, 2 } };
+        ArrayList<ArrayList<Integer>> adj_list = graph_io.readAdjList_Undirected(n, edges.length, edges);
 
-        // Recursive BFS
+        System.out.println("Input Graph:");
+        graph_io.displayAdjList(adj_list);
 
-        // Iterative BFS -> Queue
-        g.iterative_bfs(start);
+        bfs(adj_list, start);
     }
 }

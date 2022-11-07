@@ -1,4 +1,4 @@
-package DataStructures.Implementation.Graph;
+package Algorithms.Graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,7 +6,7 @@ import java.util.Queue;
 // Input = Maze / Array
 // BFS = Shortest Path
 
-public class bfs {
+public class shortest_path {
 
     static class Pair {
         int first, second;
