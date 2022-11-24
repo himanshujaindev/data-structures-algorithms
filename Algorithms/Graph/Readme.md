@@ -5,4 +5,4 @@ BFS:
 
 DFS
 1. Count Number of Islands
-2. Backtracking
+2. Word Search - Backtracking
