@@ -19,10 +19,14 @@ Repository for tested codes of DSA and CP problems
 .
 ├── Algorithms
 │   ├── Arrays
-│   ├── BinarySearch
+│   ├── Backtracking
+│   ├── DP
+│   ├── Graph
 │   ├── Miscellaneous
 │   ├── Patterns
 │   ├── Recursion
+│   ├── Searching
+│   │   └── BinarySearch
 │   └── Sorting
 ├── Basics
 ├── Codechef
@@ -37,17 +41,17 @@ Repository for tested codes of DSA and CP problems
 │   │   ├── Sort
 │   │   └── Stack
 │   └── Implementation
-│       ├── Arrays
-│       ├── Graphs
+│       ├── Array
+│       ├── Graph
 │       ├── LinkedList
 │       ├── Queue
-│       ├── Strings
-│       └── Tree
+│       ├── String
+│       ├── Tree
+│       └── Trie
 ├── LeetCode
-├── Practice
-└── QuickCode
+└── Practice
 
-29 directories
+33 directories
 
 Use Command: 
 MAC: tree -d OR tree -I '*.class'
