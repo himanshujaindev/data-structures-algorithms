@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+import java.util.HashMap;
+import java.util.PriorityQueue;
 
 class Company implements Comparable<Company> {
     private String name;
@@ -51,6 +53,27 @@ class Company implements Comparable<Company> {
 
 public class sorting {
 
+    public static String frequencySort(String s) {
+        HashMap<Character, Integer> hm = new HashMap<>();
+        for (char ch : s.toCharArray())
+            hm.put(ch, hm.getOrDefault(ch, 0) + 1);
+
+        // Lambda -  Decreasing Order
+        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> hm.get(b) - hm.get(a));
+        maxHeap.addAll(hm.keySet());
+
+        StringBuilder res = new StringBuilder();
+        while (!maxHeap.isEmpty()) {
+            char key = maxHeap.poll();
+            int val = hm.get(key);
+
+            while (val-- > 0)
+                res.append(key);
+        }
+
+        return res.toString();
+    }
+
     public static void main(String[] args) {
 
         Random rand = new Random();
@@ -58,23 +81,29 @@ public class sorting {
         // Sort Type = List of Integer; Ascending
         List<Integer> intList1 = new ArrayList<>(Arrays.asList(4, 2, 5));
 
-        System.out.println(intList1);
+        System.out.println("Sort Type = List of Integer; Ascending");
+        System.out.println("Original list = " + intList1);
         Collections.sort(intList1);
-        System.out.println(intList1);
+        System.out.println("Sorted list = " + intList1);
+        System.out.println();
 
         // Sort Type = List of Integer; Descending
         List<Integer> intList2 = new ArrayList<>(Arrays.asList(4, 2, 5));
 
-        System.out.println(intList2);
+        System.out.println("Sort Type = List of Integer; Descending");
+        System.out.println("Original list = " + intList2);
         Collections.sort(intList2, Collections.reverseOrder());
-        System.out.println(intList2);
+        System.out.println("Sorted list = " + intList2);
+        System.out.println();
 
         // Sort Type = List of Strings; Ascending
         List<String> stringList1 = new ArrayList<>(Arrays.asList("Hi", "Bye", "Aaa"));
 
-        System.out.println(stringList1);
+        System.out.println("Sort Type = List of Strings; Ascending");
+        System.out.println("Original string = " + stringList1);
         Collections.sort(stringList1);
-        System.out.println(stringList1);
+        System.out.println("Sorted string = " + stringList1);
+        System.out.println();
 
         // Sort Type = List of List of Integer; Ascending -> Using Comparator-compare
         List<List<Integer>> listIntList1 = new ArrayList<>();
@@ -92,9 +121,11 @@ public class sorting {
             }
         };
 
-        System.out.println(listIntList1);
+        System.out.println("Sort Type = List of List of Integer; Ascending -> Using Comparator-compare");
+        System.out.println("Original list = " + listIntList1);
         Collections.sort(listIntList1, comparator1);
-        System.out.println(listIntList1);
+        System.out.println("Sorted list = " + listIntList1);
+        System.out.println();
 
         // Sort Type = List of List of Strings; Ascending -> Using Comparator-compare
         List<List<String>> listStringList1 = new ArrayList<>();
@@ -112,9 +143,11 @@ public class sorting {
             }
         };
 
-        System.out.println(listStringList1);
+        System.out.println("Sort Type = List of List of Strings; Ascending -> Using Comparator-compare");
+        System.out.println("Original list = " + listStringList1);
         Collections.sort(listStringList1, comparator2);
-        System.out.println(listStringList1);
+        System.out.println("Sorted list = " + listStringList1);
+        System.out.println();
 
         // Sort Type = List of object; Ascending -> Using Comparator-compare
         List<Company> companies = new ArrayList<>();
@@ -123,7 +156,7 @@ public class sorting {
         companies.add(new Company("Amazon", 102));
 
         /*
-
+        
         Comparator<Company> comparator3 = new Comparator<Company>() {
             @Override
             public int compare(Company o1, Company o2) {
@@ -133,18 +166,22 @@ public class sorting {
                     return -1;
             }
         };
-
-        System.out.println(companies.toString());
+        
+        System.out.println("Sort Type = List of object; Ascending -> Using Comparator-compare");
+        System.out.println("Original list = " + companies.toString());
         Collections.sort(companies, comparator3);
-        System.out.println(companies.toString());
+        System.out.println("Sorted list = " + companies.toString());
+        System.out.println();
         
         */
-        
+
         // Sort Type = List of object; Ascending -> Using Comparable-compareTo
 
-        System.out.println(companies.toString());
+        System.out.println("Sort Type = List of object; Ascending -> Using Comparable-compareTo");
+        System.out.println("Original list = " + companies.toString());
         Collections.sort(companies);
-        System.out.println(companies.toString());
+        System.out.println("Sorted list = " + companies.toString());
+        System.out.println();
 
         // Sort Type = List of Integer; Based on Ascending order of another array ->
         // Using Comparator-comparingInt
@@ -152,9 +189,12 @@ public class sorting {
         int[] sortOrder1 = { 2, 3, 1 };
         List<Integer> array1 = new ArrayList<>(Arrays.asList(0, 1, 2));
 
+        System.out.println(
+                "Sort Type = List of Integer; Based on Ascending order of another array -> Using Comparator-comparingInt");
         System.out.println("Original array = " + array1.toString());
         Collections.sort(array1, Comparator.comparingInt(i -> sortOrder1[i]));
         System.out.println("Sorted array = " + array1.toString());
+        System.out.println();
 
         // Sort Type = List of Integer; Based on Descending order of another array ->
         // Using Comparator-comparingInt
@@ -162,9 +202,21 @@ public class sorting {
         int[] sortOrder2 = { 2, 3, 1 };
         List<Integer> array2 = new ArrayList<>(Arrays.asList(0, 1, 2));
 
+        System.out.println(
+                "Sort Type = List of Integer; Based on Descending order of another array -> Using Comparator-comparingInt");
         System.out.println("Original array = " + array2.toString());
         Collections.sort(array2, Comparator.comparingInt(i -> -sortOrder2[i]));
         System.out.println("Sorted array = " + array2.toString());
+        System.out.println();
+
+        // Sort Type = String; Based on frequency of characters
+        String string1 = "tree";
+        String resString1 = frequencySort(string1);
+
+        System.out.println("Sort Type = String; Based on frequency of characters");
+        System.out.println("Original string = " + string1);
+        System.out.println("Sorted string = " + resString1);
+        System.out.println();
 
     }
 
