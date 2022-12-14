@@ -17,39 +17,39 @@ Repository for tested codes of DSA and CP problems
 
 ```
 .
-├── Algorithms
-│   ├── Arrays
-│   ├── Backtracking
-│   ├── DP
-│   ├── Graph
-│   ├── Miscellaneous
-│   ├── Patterns
-│   ├── Recursion
-│   ├── Searching
-│   │   └── BinarySearch
-│   └── Sorting
-├── Basics
-├── Codechef
-├── Common
-├── DataStructures
-│   ├── Collection
-│   │   ├── Heap
-│   │   ├── List
-│   │   ├── Maps
-│   │   ├── Queue
-│   │   ├── Set
-│   │   ├── Sort
-│   │   └── Stack
-│   └── Implementation
-│       ├── Array
-│       ├── Graph
-│       ├── LinkedList
-│       ├── Queue
-│       ├── String
-│       ├── Tree
-│       └── Trie
-├── LeetCode
-└── Practice
+|-- Algorithms
+|   |-- Arrays
+|   |-- Backtracking
+|   |-- Dp
+|   |-- Graph
+|   |-- Miscellaneous
+|   |-- Patterns
+|   |-- Recursion
+|   |-- Searching
+|   |   `-- BinarySearch
+|   `-- Sorting
+|-- Basics
+|-- Codechef
+|-- Common
+|-- DataStructures
+|   |-- Collection
+|   |   |-- Heap
+|   |   |-- List
+|   |   |-- Maps
+|   |   |-- Queue
+|   |   |-- Set
+|   |   |-- Sort
+|   |   `-- Stack
+|   `-- Implementation
+|       |-- Array
+|       |-- Graph
+|       |-- LinkedList
+|       |-- Queue
+|       |-- String
+|       |-- Tree
+|       `-- Trie
+|-- LeetCode
+`-- Practice
 
 33 directories
 
