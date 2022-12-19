@@ -1,6 +1,8 @@
 package DataStructures.Collection.Maps;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import Common.io;
@@ -28,5 +30,16 @@ public class hashmap {
 
         for (Map.Entry<Integer, Integer> entry : hm.entrySet())
             System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+
+        // hm: key = int; val = list -> Usecase: Graph edges to HM
+        int[][] edges = { { 0, 1 }, { 0, 2 }, { 3, 5 }, { 5, 4 }, { 4, 3 } };
+        Map<Integer, List<Integer>> graph = new HashMap<>();
+        for (int[] edge : edges) {
+            int a = edge[0], b = edge[1];
+            graph.computeIfAbsent(a, val -> new ArrayList<Integer>()).add(b);
+            graph.computeIfAbsent(b, val -> new ArrayList<Integer>()).add(a);
+        }
+
+        System.out.println("Graph = " + graph.toString());
     }
 }
