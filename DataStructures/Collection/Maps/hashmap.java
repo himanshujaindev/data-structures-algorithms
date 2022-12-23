@@ -7,6 +7,23 @@ import java.util.Map;
 
 import Common.io;
 
+class Pair {
+    int a, b;
+
+    Pair(int x, int y) {
+        this.a = x;
+        this.b = y;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                " a='" + this.a + "'" +
+                ", b='" + this.b + "'" +
+                "}";
+    }
+}
+
 public class hashmap {
     public static void main(String[] args) {
         int[] arr = io.readArr();
