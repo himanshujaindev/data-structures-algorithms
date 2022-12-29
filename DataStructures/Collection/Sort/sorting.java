@@ -218,6 +218,35 @@ public class sorting {
         System.out.println("Sorted string = " + resString1);
         System.out.println();
 
+        // USING LAMBDA EXPRESSION
+
+        // Sort Type = int[][]; Based on index 1 ascending
+        int[][] tasks = { { 1, 2 }, { 2, 4 }, { 3, 2 }, { 4, 1 } };
+        System.out.println("Sort Type = int[][]; Based on index 1 ascending");
+        System.out.println("Original int[][] = ");
+        for (int[] a : tasks)
+            System.out.println(a[0] + " " + a[1]);
+
+        Arrays.sort(tasks, (a, b) -> Integer.compare(a[1], b[1]));
+
+        System.out.println("Sorted int[][] = ");
+        for (int[] a : tasks)
+            System.out.println(a[0] + " " + a[1]);
+
+        System.out.println();
+
+        // Sort Type = List of List of Integer; Ascending -> Using Lambda
+        List<List<Integer>> lambdaListIntList1 = new ArrayList<>();
+        lambdaListIntList1.add(Arrays.asList(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10)));
+        lambdaListIntList1.add(Arrays.asList(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10)));
+        lambdaListIntList1.add(Arrays.asList(rand.nextInt(10), rand.nextInt(10), rand.nextInt(10)));
+
+        System.out.println("Sort Type = List of List of Integer; Ascending -> Using Lambda");
+        System.out.println("Original list = " + lambdaListIntList1);
+        Collections.sort(lambdaListIntList1, (a, b) -> a.get(1) - b.get(1));
+        System.out.println("Sorted list = " + lambdaListIntList1);
+        System.out.println();
+
     }
 
 }
