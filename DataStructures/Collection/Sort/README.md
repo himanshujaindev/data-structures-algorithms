@@ -1,3 +1,4 @@
+```
 Sort using lambda expression:
 
 List<List<Integer>> toSort;
@@ -10,3 +11,4 @@ Arrays.sort(toSort, (a,b) -> Integer.compare(a[0], b[0])); Type of a and b = int
 
 Ascending = a - b;
 Descending = b - a;
+```
