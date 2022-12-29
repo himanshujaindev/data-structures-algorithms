@@ -1,3 +1,4 @@
+```
 BFS:
 1. Shortest Path
 
@@ -6,3 +7,4 @@ BFS:
 DFS
 1. Count Number of Islands
 2. Word Search - Backtracking
+```

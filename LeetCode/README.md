@@ -1,3 +1,4 @@
+```
 package LeetCode;
 
 class Solution {
@@ -16,3 +17,4 @@ public class leetcode {
         System.out.println(sc.increasingTriplet(new int[] { 1, 1, -2, 6 }));
     }
 }
+```
