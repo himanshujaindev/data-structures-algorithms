@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution {
-    List<List<Integer>> contructGrpah(int n, int[][] edges) {
+    List<List<Integer>> contructGraph(int n, int[][] edges) {
         List<List<Integer>> graph = new ArrayList<>();
 
         for (int i = 0; i < n; i++)
@@ -65,7 +65,7 @@ public class detect_cycle_unidirected {
         int[][] edges = { { 1, 2 }, { 2, 3 }, { 3, 4 }, { 4, 5 }, { 1, 5 } };
         // int[][] edges = { { 1, 2 }, { 1, 3 }, { 2, 4 } };
 
-        List<List<Integer>> graph = sc.contructGrpah(n, edges);
+        List<List<Integer>> graph = sc.contructGraph(n, edges);
         System.out.println(sc.isCyclic(graph));
     }
 }
