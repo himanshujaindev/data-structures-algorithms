@@ -1,9 +1,12 @@
 package DataStructures.Collection.Maps;
 
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import Common.io;
 
@@ -58,5 +61,19 @@ public class hashmap {
         }
 
         System.out.println("Graph = " + graph.toString());
+
+        // hm: Integer, Set<Integer>
+        // Set<Integer> set = hm.get(key);
+        // set.remove(element); WILL THE ELEMENT GET REMOVED FROM THE HM ?? YES
+        Map<Integer, LinkedHashSet<Integer>> cache = new HashMap<>();
+        cache.computeIfAbsent(1, val -> new LinkedHashSet<>()).add(10);
+        cache.computeIfAbsent(1, val -> new LinkedHashSet<>()).add(20);
+        cache.computeIfAbsent(1, val -> new LinkedHashSet<>()).add(30);
+        System.out.println(cache.toString());
+
+        Set<Integer> set = cache.get(1);
+        set.remove(20);
+
+        System.out.println(cache.toString());
     }
 }
