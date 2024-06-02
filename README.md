@@ -3,7 +3,7 @@ Repository for tested codes of DSA and CP problems
 
 
 ### Coding Profile:
-- **Leetcode**: https://leetcode.com/nhimanshujain/ 
+- **Leetcode**: https://leetcode.com/u/himx
 - **Codechef**: https://www.codechef.com/users/himanshujain17 
 
 
