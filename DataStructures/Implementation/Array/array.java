@@ -1,8 +1,11 @@
 package DataStructures.Implementation.Array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+
+import Common.io;
 
 /*
 Reference:
@@ -50,5 +53,14 @@ public class array {
 
 
         // Arrays.sort(arr1);
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        // Append new values
+        arrayList.add(5);
+        arrayList.add(10);
+        arrayList.add(15);
+
+        System.out.println(arrayList);
     }
 }
