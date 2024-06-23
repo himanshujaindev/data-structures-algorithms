@@ -1,3 +1,4 @@
+package StriverDSA.a2z_1.a2z_1_5;
 public class factorial {
     private static int fac(int n) {
         if (n == 0)

@@ -1,6 +1,6 @@
 // https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
 // https://leetcode.com/problems/maximum-subarray/
-package StriverDSA.three.two;
+package StriverDSA.a2z_3.a2z_3_2;
 
 import java.util.Arrays;
 

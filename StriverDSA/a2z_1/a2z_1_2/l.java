@@ -1,3 +1,4 @@
+package StriverDSA.a2z_1.a2z_1_2;
 /*
 1                 1
 1 2             2 1

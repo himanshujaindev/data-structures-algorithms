@@ -1,3 +1,4 @@
+package StriverDSA.a2z_1.a2z_1_4;
 public class a_count_digit {
     public static void main(String[] args) {
         int n = -1;

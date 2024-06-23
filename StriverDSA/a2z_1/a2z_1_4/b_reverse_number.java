@@ -1,3 +1,4 @@
+package StriverDSA.a2z_1.a2z_1_4;
 public class b_reverse_number {
     public static void main(String[] args) {
         int n = -1234;

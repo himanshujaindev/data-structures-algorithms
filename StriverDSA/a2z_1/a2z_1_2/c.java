@@ -1,20 +1,21 @@
+package StriverDSA.a2z_1.a2z_1_2;
 /*
 
 1
-22
-333
-4444
-55555
+12
+123
+1234
+12345
 
 */
 
-public class d {
+public class c {
     public static void main(String[] args) {
 
         for (int i = 0; i < 5; i++) {
             int j = 0;
             while (j <= i) {
-                System.out.print(i + 1);
+                System.out.print(j + 1);
                 j++;
             }
 
