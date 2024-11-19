@@ -56,3 +56,7 @@ Windows: Ctrl + R
 2. Update the directory tree
 3. Follow the naming convention
 ```
+
+
+### Resources
+1. https://cp-algorithms.com/ 
