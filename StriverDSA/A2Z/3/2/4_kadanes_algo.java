@@ -1,16 +1,7 @@
-// https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
-// https://leetcode.com/problems/maximum-subarray/
-package StriverDSA.a2z_3.a2z_3_2;
-
 import java.util.Arrays;
 
-import Common.io;
-
 class Solution {
-    public Solution() {
-    }
-
-    public int maxSubArray(int[] nums) {
+    public static int maxSubArray(int[] nums) {
         int maxi = Integer.MIN_VALUE;
         int n = nums.length;
         int sum = 0;
@@ -29,7 +20,7 @@ class Solution {
 
     }
 
-    public int[] printmaxSubArray(int[] nums) {
+    public static int[] printmaxSubArray(int[] nums) {
         int maxi = Integer.MIN_VALUE;
         int n = nums.length;
         int sum = 0;
@@ -59,13 +50,9 @@ class Solution {
         res = Arrays.copyOfRange(nums, startIndex, endIndex + 1);
         return res;
     }
-}
-
-public class kadane {
 
     public static void main(String[] args) {
-        Solution sc = new Solution();
-        System.out.println(sc.maxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4}));
-        io.displayArr(sc.printmaxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
+        System.out.println(maxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
+        System.out.println(Arrays.toString(printmaxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 })));
     }
 }

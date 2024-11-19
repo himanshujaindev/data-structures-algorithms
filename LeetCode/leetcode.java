@@ -1,5 +1,3 @@
-package LeetCode;
-
 class Solution {
     // public Solution() {
     // }

@@ -1,11 +1,6 @@
 package Algorithms.Recursion;
 
 import Common.io;
-/* 
-
-3^4 = 3*3*3*3 = 3 * 3^3
-
-*/
 
 public class power {
 

@@ -1,7 +1,6 @@
-package StriverDSA.a2z_1.a2z_1_5;
 import java.util.Arrays;
 
-public class reverse_array {
+class Solution {
     private static void revArr(int start, int end, int[] arr) {
         if (start < end) {
             int temp = arr[start];

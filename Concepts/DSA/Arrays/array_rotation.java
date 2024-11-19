@@ -1,6 +1,6 @@
-package Algorithms.Arrays;
-
+package DSA.Arrays;
 import java.util.Scanner;
+
 import Common.io;
 
 // Right rotation = Move elements towards right
