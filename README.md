@@ -1,60 +1,20 @@
 # CP-DSA
-Repository for tested codes of DSA and CP problems
+DSA Code written in JAVA
 
 
 ### Coding Profile:
 - **Leetcode**: https://leetcode.com/u/himx
-- **Codechef**: https://www.codechef.com/users/himanshujain17 
-
-
-### Naming Convention
-- **Folder Name** = Upper Camel Case -> DataStructures
-- **File Name | Class Name** = Small Underscore Case -> min_heap.java
-- **Method Name | Variable Name** = Small Camel Case -> printHeap()
 
 
 ### Folder Structure:
+```
+(tree -P '*.java') | sed '1s/^/```\n/' | sed '$a\
+```' > FILES.md
+```
 
 ```
-.
-|-- Algorithms
-|   |-- Arrays
-|   |-- Backtracking
-|   |-- Dp
-|   |-- Graph
-|   |-- Miscellaneous
-|   |-- Patterns
-|   |-- Recursion
-|   |-- Searching
-|   |   `-- BinarySearch
-|   `-- Sorting
-|-- Basics
-|-- Codechef
-|-- Common
-|-- DataStructures
-|   |-- Collection
-|   |   |-- Heap
-|   |   |-- List
-|   |   |-- Maps
-|   |   |-- Queue
-|   |   |-- Set
-|   |   |-- Sort
-|   |   `-- Stack
-|   `-- Implementation
-|       |-- Array
-|       |-- Graph
-|       |-- LinkedList
-|       |-- Queue
-|       |-- String
-|       |-- Tree
-|       `-- Trie
-|-- LeetCode
-`-- Practice
-
-33 directories
-
 Use Command: 
-MAC: tree -d OR tree -I '*.class'
+MAC: tree -d OR tree -I '*.class' OR tree -P '*.java'
 Windows: tree
 ```
 
@@ -64,6 +24,12 @@ Windows: tree
 javac Rootpath/<filename>.java
 java Rootpath/<classname>
 ```
+
+
+### Naming Convention
+- Folder Name = Upper Camel Case -> DataStructures
+- File Name | Class Name = Small Underscore Case -> min_heap.java
+- Method Name | Variable Name = Small Camel Case -> printHeap()
 
 
 ### Keyboard Shortcuts (VSCODE)
