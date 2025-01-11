@@ -31,11 +31,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
 
 ### Keyboard Shortcuts (VSCode)
 
-```
-1. Format: ⌘+S
-2. Debug: ⌘+D
-3. Run: ⌘+R
-```
+1. Format: ```⌘+S```
+2. Debug: ```⌘+D```
+3. Run: ```⌘+R```
 
 
 ### Todo Before Commit
