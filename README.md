@@ -38,11 +38,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
 
 ### Todo Before Commit
 
-```
 - Format the document
 - Update the directory tree
 - Follow the naming convention
-```
 
 
 ### Commands
@@ -54,11 +52,11 @@ java Rootpath/<classname>
 
 
 ### Naming Convention
-```
-- Folder Name = Upper Camel Case -> DataStructures
-- File Name | Class Name = Small Underscore Case -> min_heap.java
-- Method Name | Variable Name = Small Camel Case -> printHeap()
-```
+
+- Folder Name = Upper Camel Case -> ```DataStructures```
+- File Name | Class Name = Small Underscore Case -> ```min_heap.java```
+- Method Name | Variable Name = Small Camel Case -> ```printHeap()```
+
 
 ### Resources
 1. https://cp-algorithms.com
