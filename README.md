@@ -3,7 +3,7 @@ DSA Code written in JAVA
 
 
 ### Coding Profile:
-- **Leetcode**: https://leetcode.com/u/himx
+- **Leetcode**: [leetcode.com/u/himanshujaindev](https://leetcode.com/u/himanshujaindev/)
 
 
 ### Folder Structure:
