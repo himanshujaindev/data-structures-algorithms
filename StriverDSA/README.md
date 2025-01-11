@@ -18,5 +18,5 @@ class Solution {
 
 Command:
 1. Format: ```⌘+S```
-2. Debug: ```⌘+D```
-3. Run: ```⌘+R```
+2. Debug: ```⌘+'```
+3. Run: ```⌘+⏎```

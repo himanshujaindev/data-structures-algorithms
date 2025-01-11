@@ -3,11 +3,11 @@ DSA Code written in JAVA
 
 
 ### Coding Profile
-- **Leetcode**: [leetcode.com/u/himanshujaindev](https://leetcode.com/u/himanshujaindev/)
+- **[leetcode.com/himanshujaindev](https://leetcode.com/u/himanshujaindev/)**
 
 
 ### Installation and Setup
-1. Download JDK - https://www.oracle.com/java/technologies/downloads/
+1. Download JDK - [here](https://www.oracle.com/java/technologies/downloads/)
 ```
 ❯ javac -version
 javac 23.0.1
@@ -17,9 +17,12 @@ java version "23.0.1" 2024-10-15
 Java(TM) SE Runtime Environment (build 23.0.1+11-39)
 Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
 ```
-2. VS Code Extension - https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java
+2. VS Code Extension - [here](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java)
 3. Enable Format on Save option
-4. Update Keyboard shortcut for Debug and Run
+4. Update Keyboard shortcut:<br>
+    a. Start Debugging = ```⌘+'```<br>
+    b. Run Without Debugging = ```⌘+⏎```
+    
 
 
 ### Folder Structure
@@ -32,8 +35,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
 ### Keyboard Shortcuts (VSCode)
 
 1. Format: ```⌘+S```
-2. Debug: ```⌘+D```
-3. Run: ```⌘+R```
+2. Debug: ```⌘+'```
+3. Run: ```⌘+⏎```
 
 
 ### Todo Before Commit
