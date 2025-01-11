@@ -12,11 +12,24 @@ DSA Code written in JAVA
 ```' > FILES.md
 ```
 
+
+### Keyboard Shortcuts (VSCODE)
+
 ```
-Use Command: 
-MAC: tree -d OR tree -I '*.class' OR tree -P '*.java'
-Windows: tree
+1. Format: ⌘+S
+2. Debug: ⌘+D
+3. Run: ⌘+R
 ```
+
+
+### ToDo Before Commit
+
+```
+1. Format the document
+2. Update the directory tree
+3. Follow the naming convention
+```
+
 
 ### Commands
 
@@ -32,31 +45,16 @@ java Rootpath/<classname>
 - Method Name | Variable Name = Small Camel Case -> printHeap()
 
 
-### Keyboard Shortcuts (VSCODE)
-
-```
-1. Format Document
-Mac: Command + Control + F
-Windows: Ctrl + Alt + F
-
-2. Debug
-Mac: Command + D
-Windows: Ctrl + D
-
-2. Run
-Mac: Command + R
-Windows: Ctrl + R
-```
-
-
-### ToDo Before Commit
-
-```
-1. Format the document
-2. Update the directory tree
-3. Follow the naming convention
-```
-
-
 ### Resources
 1. https://cp-algorithms.com/ 
+2. https://www.oracle.com/java/technologies/downloads/ -> Download JDK
+```
+❯ javac -version
+javac 23.0.1
+
+❯ java -version
+java version "23.0.1" 2024-10-15
+Java(TM) SE Runtime Environment (build 23.0.1+11-39)
+Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
+```
+3. VS Code Extension - https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java

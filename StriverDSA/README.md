@@ -7,6 +7,5 @@ Every Algo:
 Command:
 ```
 cd /path/to/file
-javac <file>.java
-java Solution
+javac <file>>.java && java Solution
 ```

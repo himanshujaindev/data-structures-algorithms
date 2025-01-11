@@ -1,4 +1,6 @@
+
 class Solution {
+
     public static void main(String[] args) {
         int n = -1234;
         int res = 0;
