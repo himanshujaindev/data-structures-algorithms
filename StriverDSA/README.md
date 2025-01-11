@@ -6,15 +6,7 @@ Every Algo:
 
 File: ```file_name.java```
 
-Template:
-```
-class Solution {
-    private static int methodName(int n) {
-    }
-    public static void main(String[] args) {
-    }
-}
-```
+Template: [template.txt](./template.txt)
 
 Command:
 1. Format: ```⌘+S```
