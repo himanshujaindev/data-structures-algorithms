@@ -6,6 +6,22 @@ DSA Code written in JAVA
 - **Leetcode**: [leetcode.com/u/himanshujaindev](https://leetcode.com/u/himanshujaindev/)
 
 
+### Installation and SetUp
+1. Download JDK - https://www.oracle.com/java/technologies/downloads/
+```
+❯ javac -version
+javac 23.0.1
+
+❯ java -version
+java version "23.0.1" 2024-10-15
+Java(TM) SE Runtime Environment (build 23.0.1+11-39)
+Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
+```
+2. VS Code Extension - https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java
+3. Enable Format on Save option
+4. Update Keyboard shortcut for Debug and Run
+
+
 ### Folder Structure:
 ```
 (tree -P '*.java') | sed '1s/^/```\n/' | sed '$a\
@@ -46,15 +62,4 @@ java Rootpath/<classname>
 
 
 ### Resources
-1. https://cp-algorithms.com/ 
-2. https://www.oracle.com/java/technologies/downloads/ -> Download JDK
-```
-❯ javac -version
-javac 23.0.1
-
-❯ java -version
-java version "23.0.1" 2024-10-15
-Java(TM) SE Runtime Environment (build 23.0.1+11-39)
-Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
-```
-3. VS Code Extension - https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java
+1. https://cp-algorithms.com
