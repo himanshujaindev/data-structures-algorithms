@@ -1,4 +1,4 @@
-# CP-DSA
+# DSA - JAVA
 DSA Code written in JAVA
 
 
