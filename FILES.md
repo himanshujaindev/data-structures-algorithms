@@ -103,6 +103,9 @@
         │   └── 5
         │       ├── 6_factorial.java
         │       └── 7_reverse_array.java
+        ├── 10
+        │   └── 1
+        │       └── 1_longest_substring_without_repeating_characters.java
         ├── 3
         │   └── 2
         │       └── 4_kadanes_algo.java
@@ -114,5 +117,5 @@
             └── 2
                 └── 5_count_number_of_substrings.java
 
-43 directories, 71 files
+45 directories, 72 files
 ```
