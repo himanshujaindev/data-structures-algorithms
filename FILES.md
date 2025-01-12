@@ -103,9 +103,16 @@
         │   └── 5
         │       ├── 6_factorial.java
         │       └── 7_reverse_array.java
-        └── 3
+        ├── 3
+        │   └── 2
+        │       └── 4_kadanes_algo.java
+        └── 5
+            ├── 1
+            │   ├── 1_remove_outermost_paranthesis.java
+            │   ├── 2_reverse_words.java
+            │   └── 7_check_strings_anagram.java
             └── 2
-                └── 4_kadanes_algo.java
+                └── 5_count_number_of_substrings.java
 
-40 directories, 67 files
+43 directories, 71 files
 ```
