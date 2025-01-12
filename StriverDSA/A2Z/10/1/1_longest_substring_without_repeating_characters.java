@@ -29,26 +29,24 @@ class Solution {
     /*
     sliding window
     Time complexity: O(n)
-    Space complexity: O(1)
+    Space complexity: O(n)
      */
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> c = new HashMap<>();
-        int res = 0;
-        int j = 0;
+        int left = 0, right = 0;
+        int n = s.length();
+        int len = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            c.put(ch, c.getOrDefault(ch, 0) + 1);
-
-            while (c.get(ch) > 1) { // unitl its unique
-                char newch = s.charAt(j);
-                c.put(newch, c.get(newch) - 1);
-                j += 1;
+        while (right < n) {
+            if (c.containsKey(s.charAt(right))) {
+                left = Math.max(c.get(s.charAt(right)) + 1, left);
             }
-            res = Math.max(res, i - j + 1);
+            c.put(s.charAt(right), right);
+            len = Math.max(len, right - left + 1);
+            right++;
         }
 
-        return res;
+        return len;
     }
 
     public static void main(String[] args) {
