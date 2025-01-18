@@ -93,29 +93,58 @@
 ├── LeetCode
 │   └── leetcode.java
 └── StriverDSA
-    └── A2Z
+    ├── A2Z
+    │   ├── 1
+    │   │   ├── 2
+    │   │   │   └── 1_patterns.java
+    │   │   ├── 4
+    │   │   │   ├── 1_count_digits.java
+    │   │   │   └── 2_reverse_number.java
+    │   │   └── 5
+    │   │       ├── 6_factorial.java
+    │   │       └── 7_reverse_array.java
+    │   ├── 10
+    │   │   └── 1
+    │   │       └── 1_longest_substring_without_repeating_characters.java
+    │   ├── 3
+    │   │   └── 2
+    │   │       └── 4_kadanes_algo.java
+    │   └── 5
+    │       ├── 1
+    │       │   ├── 1_remove_outermost_paranthesis.java
+    │       │   ├── 2_reverse_words.java
+    │       │   └── 7_check_strings_anagram.java
+    │       └── 2
+    │           └── 5_count_number_of_substrings.java
+    └── Blind75
         ├── 1
-        │   ├── 2
-        │   │   └── 1_patterns.java
-        │   ├── 4
-        │   │   ├── 1_count_digits.java
-        │   │   └── 2_reverse_number.java
-        │   └── 5
-        │       ├── 6_factorial.java
-        │       └── 7_reverse_array.java
+        │   ├── 1.java
+        │   ├── 10.java
+        │   ├── 2.java
+        │   ├── 3.java
+        │   ├── 4.java
+        │   ├── 5.java
+        │   └── 6.java
         ├── 10
-        │   └── 1
-        │       └── 1_longest_substring_without_repeating_characters.java
+        │   └── 1.java
+        ├── 2
+        │   ├── 1.java
+        │   ├── 2.java
+        │   └── 3.java
         ├── 3
-        │   └── 2
-        │       └── 4_kadanes_algo.java
-        └── 5
-            ├── 1
-            │   ├── 1_remove_outermost_paranthesis.java
-            │   ├── 2_reverse_words.java
-            │   └── 7_check_strings_anagram.java
-            └── 2
-                └── 5_count_number_of_substrings.java
+        │   └── 1.java
+        ├── 4
+        │   └── 1.java
+        ├── 5
+        │   └── 1.java
+        ├── 6
+        │   └── 1.java
+        ├── 7
+        │   └── 1.java
+        ├── 8
+        │   └── 1.java
+        └── 9
+            └── 1.java
 
-45 directories, 72 files
+56 directories, 90 files
 ```
