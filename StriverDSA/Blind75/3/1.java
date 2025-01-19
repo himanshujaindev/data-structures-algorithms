@@ -1,21 +1,24 @@
 
 class Solution {
 
+    /*
+    dp[i] = d[i-1] + dp[i-2]
+    o(n); o(1)
+     */
     public int climbStairs(int n) {
-        int[] dp = new int[2];
-        dp[0] = 1;
-        dp[1] = 2;
+        int prev = 1;
+        int cur = 2;
 
         if (n == 1) {
-            return dp[0];
+            return prev;
         }
 
         for (int i = 3; i <= n; i++) {
-            int temp = dp[1];
-            dp[1] += dp[0];
-            dp[0] = temp;
+            int temp = cur;
+            cur += prev;
+            prev = temp;
         }
-        return dp[1];
+        return cur;
     }
 
     public static void main(String[] args) {
