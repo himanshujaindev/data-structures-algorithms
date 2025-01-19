@@ -17,7 +17,7 @@ class Solution {
 
     public static void main(String[] args) {
         int[] values = {1, 2, 3, 4, 5};
-        ListNode head = ListNode.createLinkedList(values);
+        ListNode head = ListNode.createSingleLinkedList(values);
 
         System.out.print("Original List: ");
         ListNode.printLinkedList(head);

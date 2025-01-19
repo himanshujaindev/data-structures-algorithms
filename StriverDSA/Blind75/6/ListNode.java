@@ -20,7 +20,7 @@ public class ListNode {
     }
 
     // Method to add elements to the linked list
-    public static ListNode createLinkedList(int[] values) {
+    public static ListNode createSingleLinkedList(int[] values) {
         if (values == null || values.length == 0) {
             return null;
         }
@@ -41,5 +41,21 @@ public class ListNode {
             current = current.next;
         }
         System.out.println();
+    }
+
+    public static void linkNode(ListNode head, int pos) {
+        ListNode cur = head;
+        ListNode tail = head;
+
+        while (tail.next != null) {
+            tail = tail.next;
+        }
+
+        int i = 0;
+        while (i++ < pos) {
+            cur = cur.next;
+        }
+
+        tail.next = cur;
     }
 }
