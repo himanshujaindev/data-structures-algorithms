@@ -17,7 +17,7 @@ graph:
     2. Word Search - Backtracking
     3. All the paths from source to destination = dfs + backtracking
 2. bfs - queue (Shortest Path)
-3. directed acyclic graph (DAG) - 
+3. directed acyclic graph (DAG) -
     topological sorting - dfs -> reverse pop
 adjacent matrix
 adjacent list - for every vertex - all edges
@@ -51,7 +51,9 @@ Deletion of node
 
 Spanning Tree - Convert Graph -> Tree
 
-
+Preoder - root, left, right
+Inorder - left, root, right
+Postorder - left, right, root
 
 
 
