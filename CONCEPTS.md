@@ -11,6 +11,10 @@ search
 1. linear search
 2. binary search - low, mid, high
 
+Linked List:
+- Use pointers
+- Use dummy nodes
+
 graph:
 1. dfs - stack
     1. Count Number of Islands
@@ -28,7 +32,7 @@ single source shortest path
 
 
 
-tree:
+tree: Solve by recursion
 1. binary tree (1 parent - 2 child)
     hieght: max(height(left), height(right)) + 1
             count number of edges
@@ -79,7 +83,7 @@ p -> left child = 2p+1; right child = 2p+2
 last parent -> (n/2)-1 ; n = # nodes
 min heap; max heap
 
-
+--------
 
 
 Floyd Warshall Algo
@@ -94,6 +98,8 @@ For k = 0 to n – 1
 where i = source Node, j = Destination Node, k = Intermediate Node
 ```
 
+
+---- BD
 
 Dijkstra's Algo
 - Single source shortest path
@@ -115,7 +121,7 @@ Bellman Ford
 - Iterate thro all the edges (v-1) times
 - if relaxation for vth time is possible then negative weight cycle is detected
 
-
+-----
 
 Minimum Spanning Tree (PK)
 - Prim's Algo
