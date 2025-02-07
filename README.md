@@ -62,4 +62,4 @@ java Rootpath/<classname>
 
 
 ### Resources
-1. https://cp-algorithms.com
+1. https://neetcode.io/practice

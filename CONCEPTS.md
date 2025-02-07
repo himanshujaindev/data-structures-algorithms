@@ -1,3 +1,44 @@
+arrays
+- Hashing
+- Hashset
+- Two pointers
+- prefix and sufix
+- Kadane's Algorithm
+- sorted - binary search
+
+---
+
+dp
+Recursion -> Memoization -> Tabulation -> Space Optimization
+
+
+Memoization (recursion) = Top-down = main problem -> base case
+
+Steps:
+1. create dp[n+1] array initialized to -1
+2. if(dp[n] != -1) -> return dp[n] // value is already computed
+3. else -> use recursive relation to compute dp[n] -> at the end, store the result
+
+
+Tabulation = Bottom-up = base case -> main problem
+
+Steps:
+1. declare dp[n+1] array
+2. initialize the base case -> dp[0] and/or dp[1]
+3. traverse array -> every index -> dp[i] = dp[i-1] + dp[i-2]
+
+
+Space Optimization
+
+Steps:
+1. If additional space is not required, use variables
+    dp[i-1] -> prev1
+    dp[i-2] -> prev2
+
+
+---
+
+
 sorting
 1. selection sort - find min and swap
 2. bubble sort - swap locally by moving largest element to the end
@@ -7,22 +48,26 @@ sorting
 6. heap sort - 
 7. selection sort
 
+---
+
 search
 1. linear search
 2. binary search - low, mid, high
+
+---
 
 Linked List:
 - Use pointers
 - Use dummy nodes
 
+---
+
 graph:
 1. dfs - stack
-    1. Count Number of Islands
-    2. Word Search - Backtracking
-    3. All the paths from source to destination = dfs + backtracking
 2. bfs - queue (Shortest Path)
 3. directed acyclic graph (DAG) -
     topological sorting - dfs -> reverse pop
+
 adjacent matrix
 adjacent list - for every vertex - all edges
 
@@ -30,7 +75,7 @@ adjacent list - for every vertex - all edges
 shortest path in graph
 single source shortest path
 
-
+---
 
 tree: Solve by recursion
 1. binary tree (1 parent - 2 child)
@@ -138,7 +183,9 @@ Minimum Spanning Tree (PK)
 3. (v-1) edges
 
 
-
+1. Count Number of Islands
+2. Word Search - Backtracking
+3. All the paths from source to destination = dfs + backtracking
 
 
 

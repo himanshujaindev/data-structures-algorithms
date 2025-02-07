@@ -14,7 +14,6 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             set.add(nums[i]);
         }
-
         int maxLen = 0;
         for (int num : set) {
             // start of sequence
@@ -24,11 +23,9 @@ class Solution {
                     // System.out.println(num + curLen);
                     curLen++;
                 }
-
                 maxLen = Math.max(maxLen, curLen);
             }
         }
-
         return maxLen;
     }
 
