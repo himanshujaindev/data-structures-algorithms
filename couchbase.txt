@@ -1,0 +1,19 @@
+Chanabasappa Ghali - QA Manager
+- Automation
+- Testing
+
+Bharath Prabhakar - Senior QE Engineer
+Dict, Set
+
+
+Indexing in Databases - https://www.geeksforgeeks.org/indexing-in-databases-set-1/
+- <search_key, data_reference>
+- Faster data retrival / data access (min disk i/o)
+- consistent data performace
+- Reduce insert and update perf, index has to be updated -> Lead to increase db size
+
+
+Garbage Collection
+- automatic process that manages memory in the heap
+- identifies which objects are still in use (referenced) and which are not in use (unreferenced)
+- Unreferenced objects can be deleted to free up memory
