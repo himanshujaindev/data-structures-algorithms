@@ -11,6 +11,9 @@ arrays
 dp
 Recursion -> Memoization -> Tabulation -> Space Optimization
 
+Two properties of dp problem:
+Optimal Substructure -> Problem can be expressed in terms of Recursion
+Overlapping Subproblems -> Many subproblems that are computed multiple times
 
 Memoization (recursion) = Top-down = main problem -> base case
 
