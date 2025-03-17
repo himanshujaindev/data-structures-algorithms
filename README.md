@@ -33,7 +33,8 @@ activate_python='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 
 3. Enable Format on Save option
 4. Update Keyboard shortcut:<br>
     a. Start Debugging = ```⌘+'```<br>
-    b. Run Without Debugging = ```⌘+⏎```
+    b. Run Without Debugging = ```⌘+⏎```<br>
+    c. Python: Run Python File = ```⌘+⏎```
     
 
 
