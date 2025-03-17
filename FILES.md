@@ -7,7 +7,7 @@
 │   ├── functions.java
 │   ├── graph_io.java
 │   ├── hello.java
-│   ├── integer_class.java
+│   ├── integer.java
 │   ├── io.java
 │   ├── lists.java
 │   ├── math.java
