@@ -27,8 +27,8 @@ activate_python='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 
 
 2. VS Code Extension - [java](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java), [py-format](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
 
-<img width="641" alt="java-extension" src="https://github.com/user-attachments/assets/034e0831-b44c-4d83-bdd3-238a050cee98" />
-<img width="641" alt="py-extension" src="https://github.com/user-attachments/assets/b7b511d0-8514-4d56-a938-f2feb82339be" />
+<img width="400" alt="py-extension" src="https://github.com/user-attachments/assets/b7b511d0-8514-4d56-a938-f2feb82339be" />
+<img width="400" alt="java-extension" src="https://github.com/user-attachments/assets/034e0831-b44c-4d83-bdd3-238a050cee98" />
 
 3. Enable Format on Save option
 4. Update Keyboard shortcut:<br>
