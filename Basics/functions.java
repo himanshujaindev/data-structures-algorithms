@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +14,7 @@ references will reflect on the same actual instance. However if you assign
 one of the reference to some new Object the other reference will still point
 to the same original instance.
 
-*/
-
+ */
 public class functions {
 
     public static void passObjectToFuntion(List<Integer> list) {

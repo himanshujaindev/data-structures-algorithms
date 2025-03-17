@@ -1,12 +1,16 @@
-public class tips_and_tricks {
+
+public class convert_type {
+
     public static void main(String[] args) {
 
         // int to String
         int num1 = 10;
-        String num1S = String.valueOf(num1);
+        String string1 = String.valueOf(num1);
+        System.out.println(string1.getClass());
 
         // String to int
-        int num2 = Integer.valueOf(num1S);
+        int num2 = Integer.valueOf(string1);
+        System.out.println(num2);
 
         // String to char array
         String str1 = "hello";
