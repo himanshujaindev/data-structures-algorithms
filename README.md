@@ -1,5 +1,6 @@
-# DSA - JAVA
-DSA Code written in JAVA
+# data-structures-algorithms
+- DSA Code written in JAVA
+- PY Basics
 
 
 ### Coding Profile
@@ -16,8 +17,18 @@ javac 23.0.1
 java version "23.0.1" 2024-10-15
 Java(TM) SE Runtime Environment (build 23.0.1+11-39)
 Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
+
+❯ python3 --version  
+Python 3.13.1
+
+❯ alias activate_python 
+activate_python='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 list'
 ```
-2. VS Code Extension - [here](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java)
+
+
+2. VS Code Extension - [java](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java), [py-format](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+
+
 3. Enable Format on Save option
 4. Update Keyboard shortcut:<br>
     a. Start Debugging = ```⌘+'```<br>

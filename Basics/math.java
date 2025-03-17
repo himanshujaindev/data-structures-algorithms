@@ -1,4 +1,6 @@
+
 public class math {
+
     public static void main(String[] args) {
         int a = 10;
         int b = 2;
@@ -9,6 +11,6 @@ public class math {
         System.out.println("Power = " + Math.pow(a, b));
         System.out.println("Sqrt = " + Math.sqrt(a));
         System.out.println("Random = " + Math.random()); // Random double
-        System.out.println("Random = " + Math.abs(b-a));
+        System.out.println("Random = " + Math.abs(b - a));
     }
 }

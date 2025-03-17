@@ -1,4 +1,6 @@
-public class integer_class {
+
+public class integer {
+
     public static void main(String[] args) {
         int x = 3;
         System.out.println(Integer.toBinaryString(x));

@@ -3,8 +3,8 @@ for i in range(10):
     a.add(i)
 print(a)
 
-b= set()
-for i in range(5,14):
+b = set()
+for i in range(5, 14):
     b.add(i)
 print(b)
 

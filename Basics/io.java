@@ -52,8 +52,9 @@ public class io {
         int[][] matrix = new int[rows][cols];
         System.out.println("Enter matrix elements - row vise:");
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < cols; j++) {
                 matrix[i][j] = sc.nextInt();
+            }
         }
 
         return matrix;

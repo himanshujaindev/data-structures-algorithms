@@ -7,20 +7,20 @@ values - no restrictions for dictionary values
 a = dict()
 
 for i in range(10):
-    a[i] = chr(65+i)
+    a[i] = chr(65 + i)
 print(a)
 
-a[4] = 'X'  # update dict
+a[4] = "X"  # update dict
 print(a)
 
 
-places = ["Colorado","Chicago","Boston","Minnesota","Milwaukee","Seattle"]
-teams = ["Rockies","White Sox","Red Sox","Twins","Brewers","Mariners"]
+places = ["Colorado", "Chicago", "Boston", "Minnesota", "Milwaukee", "Seattle"]
+teams = ["Rockies", "White Sox", "Red Sox", "Twins", "Brewers", "Mariners"]
 print(dict(zip(places, teams)))
 
 print(dir(a))
 
-#comprehensions
+# comprehensions
 squares = {integer: integer**2 for integer in range(1, 10)}
 print(squares)
 
@@ -34,15 +34,15 @@ print(inventory.keys())
 print(inventory.values())
 print(inventory.items())
 
-inventory.update(a) # merge two dict
+inventory.update(a)  # merge two dict
 print(inventory)
 
 
 # remove data from dict
 print(inventory.pop("apple"))
-print(inventory.pop("grape",-1))
+print(inventory.pop("grape", -1))
 
-print(inventory.popitem()) # LIFO
+print(inventory.popitem())  # LIFO
 
 inventory.clear()
 print(inventory)
@@ -73,26 +73,11 @@ def common_keys_recursive(dict1, dict2):
 
     return result
 
-# Example Usage
-dict1 = {
-    "a": 1,
-    "b": {
-        "x": 10,
-        "y": 20,
-        "z": {"p": 100}
-    },
-    "c": 3
-}
 
-dict2 = {
-    "b": {
-        "x": 15,
-        "y": 25,
-        "z": {"p": 200, "q": 300}
-    },
-    "c": 5,
-    "d": 6
-}
+# Example Usage
+dict1 = {"a": 1, "b": {"x": 10, "y": 20, "z": {"p": 100}}, "c": 3}
+
+dict2 = {"b": {"x": 15, "y": 25, "z": {"p": 200, "q": 300}}, "c": 5, "d": 6}
 
 print(common_keys_recursive(dict1, dict2))
 # Output: {'b', 'x', 'y', 'z', 'c', 'p'}
