@@ -27,7 +27,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
 
 ### Folder Structure
 ```
-(tree -P '*.java') | sed '1s/^/```\n/' | sed '$a\
+(tree -P '*.java|*.py') | sed '1s/^/```\n/' | sed '$a\
 ```' > FILES.md
 ```
 
