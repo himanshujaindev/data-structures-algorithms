@@ -39,8 +39,11 @@ py_activate='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 list
 ```
 git config --global --edit
 (filename: ~/.gitconfig)
+git commit --amend --reset-author
 git config --global user.name
 git config --global user.email
+git log
+Author: himanshujaindev <dev.himanshujain@gmail.com>
 ```
 
 ### Folder Structure
