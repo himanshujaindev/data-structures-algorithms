@@ -70,13 +70,6 @@ brew install tree
 - Follow the naming convention
 
 
-### Commands
-
-```
-javac Rootpath/<filename>.java
-java Rootpath/<classname>
-```
-
 
 ### Naming Convention
 
