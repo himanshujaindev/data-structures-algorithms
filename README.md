@@ -8,21 +8,21 @@
 
 
 ### Installation and Setup
-1. Download JDK - [here](https://www.oracle.com/java/technologies/downloads/)
+1. Download JDK - [here](https://www.oracle.com/in/java/technologies/downloads/)
 ```
 ❯ javac -version
-javac 23.0.1
+javac 24
 
 ❯ java -version
-java version "23.0.1" 2024-10-15
-Java(TM) SE Runtime Environment (build 23.0.1+11-39)
-Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
+java version "24" 2025-03-18
+Java(TM) SE Runtime Environment (build 24+36-3646)
+Java HotSpot(TM) 64-Bit Server VM (build 24+36-3646, mixed mode, sharing)
 
-❯ python3 --version  
-Python 3.13.1
+❯ python3 --version
+Python 3.9.6
 
-❯ alias activate_python 
-activate_python='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 list'
+❯ alias py_activate
+py_activate='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 list'
 ```
 
 2. VS Code Extension - [java](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java), [py-format](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
@@ -34,11 +34,13 @@ activate_python='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 
 4. Update Keyboard shortcut:<br>
     a. Start Debugging = ```⌘+'```<br>
     b. Run Without Debugging = ```⌘+⏎```<br>
-    c. Python: Run Python File = ```⌘+⏎```
-    
+       (Applicable for java and py)
 
 
 ### Folder Structure
+```
+brew install tree
+```
 ```
 (tree -P '*.java|*.py') | sed '1s/^/```\n/' | sed '$a\
 ```' > FILES.md
