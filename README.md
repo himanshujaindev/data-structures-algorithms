@@ -35,7 +35,13 @@ py_activate='python3 -m venv ~/pyenv && source ~/pyenv/bin/activate && pip3 list
     a. Start Debugging = ```⌘+'```<br>
     b. Run Without Debugging = ```⌘+⏎```<br>
        (Applicable for java and py)
-
+5. Set git user:
+```
+git config --global --edit
+(filename: ~/.gitconfig)
+git config --global user.name
+git config --global user.email
+```
 
 ### Folder Structure
 ```
