@@ -1,6 +1,5 @@
 # data-structures-algorithms
-- DSA Code written in JAVA
-- PY Basics
+DSA in Python and Java
 
 
 ### Coding Profile
