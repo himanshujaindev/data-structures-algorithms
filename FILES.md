@@ -191,7 +191,10 @@
     │   └── striver
     │       ├── A2Z
     │       └── Blind75
+    │           └── 1
+    │               ├── 1_2sum.py
+    │               └── 2_buy_sell_stock.py
     └── test.py
 
-65 directories, 128 files
+66 directories, 130 files
 ```

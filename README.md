@@ -58,8 +58,8 @@ brew install tree
 ### Keyboard Shortcuts (VSCode)
 
 1. Format: ```⌘+S```
-2. Debug: ```⌘+'```
-3. Run: ```⌘+⏎```
+2. Debug (workbench.action.debug.start): ```⌘+'```
+3. Run (workbench.action.debug.run): ```⌘+⏎```
 
 
 ### Todo Before Commit
@@ -67,7 +67,6 @@ brew install tree
 - Format the document
 - Update the directory tree
 - Follow the naming convention
-
 
 
 ### Naming Convention
@@ -79,3 +78,4 @@ brew install tree
 
 ### Resources
 1. https://neetcode.io/practice
+2. https://takeuforward.org
